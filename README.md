@@ -97,7 +97,7 @@ For `RecyclerView`, it's straighforward:
 LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false);
 recyclerView.setLayoutManager(linearLayoutManager);
 recyclerView.setAdapter(new TestAdapter());
-horizontalIndicator.setRecyclerView(recyclerView);
+recyclerViewIndicator.setRecyclerView(recyclerView); // attach the indicator to the recyclerview
 // If you need to change the adapter size, you should call this function
 recyclerViewIndicator.forceUpdateItemCount();
 ```
